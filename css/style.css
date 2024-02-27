@@ -1,0 +1,86 @@
+*{margin: 0;}
+body{
+    font-family: "Century Gothic", monospace;
+}
+nav{
+    background: rgb(40,40,40);
+    max-width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    float: right;
+    transition: 100ms;
+    margin: 0 5px 0 25px;
+}
+nav a{
+    display: block;
+    font-size: 14px;
+    font-family: Montserrat, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 17px 7px;
+}
+i{
+    margin-right: 5px;
+}
+li:hover:not(.active){
+    cursor: pointer;
+    background: black;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+li.active a{
+    color: orange;
+}
+@media screen and (max-width: 600px){
+    nav li{float: none;}
+}
+.bio{
+    max-width: 100%;
+    height: auto;
+    margin: auto ;
+    text-align: center;
+}
+.bio img{
+    border: 6px solid black;
+    max-width: 100%;
+    height: auto;
+}
+.bg-bio{
+    height: 450px;
+    background: url("../assets/bg.png") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+.line{
+    background: orange;
+    height: 5px;
+    width: 60%;
+    margin: 5px auto;
+}
+.card-bio-container{
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    color: black;
+}
+.card-bio{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.card-bio img{
+    border-radius: 50%;
+}
+.content{
+    text-align: center;
+}
